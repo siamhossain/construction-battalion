@@ -1,0 +1,73 @@
+
+.calendar {
+  padding: 35px 8px 45px 8px;
+}
+.headline {
+  text-align: center;
+  position: relative;
+  color: #555;
+  padding-bottom: 20px;
+}
+.headline .click-right i{
+  right: 5px;
+  background-color: #fbc34b;
+  padding: 0px 15px;
+  border-radius: 25px;
+}
+
+.headline .click-left i{
+  right: 5px;
+  background-color: #69639c;
+  padding: 0px 15px;
+  border-radius: 25px;
+  color: #fff;
+}
+
+.headline .divider {
+  color: #ad0;
+}
+.headline .year {
+  color: #bbb;
+}
+.headline .click-left, .headline .click-right {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+}
+.headline .click-left {
+  left: 5px;
+}
+.headline .click-right {
+  right: 5px;
+}
+.weekdays, .days {
+  text-align: center;
+  margin: 0 auto;
+}
+.weekdays * {
+  width: 25px;
+  margin: 0px 6px;
+  color: #000000;
+  display: inline-block;
+}
+.day {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  font-size: 8px;
+}
+.date {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  line-height: 40px;
+  margin: 0px 8px;
+  color: #000000;
+  font-size: 12px;
+}
+.date.out-of-scope {
+  color: #555;
+}
+.date.selected {
+  color: #ad0;
+  border: 1px solid #ad0;
+}
